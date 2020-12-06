@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="p-3">
+    <div name="environmentControl" class="d-flex align-items-center border-bottom pb-2 mb-2">
+        <button name="createAccount" class="btn btn-primary mr-3">Criar ambiente</button>
+        <div class="select-wrapper d-flex flex-row flex-fill">
+            <label>Ambiente atual</label>
+            <select name="enviroments" class="form-control form-control-sm"></select>
+        </div>
+    </div>
+    <div name="empty" class="border p-3 mb-2">
+        <h4>Nenhum ambiente cadastrado. Clique no botão acima "Criar ambiente" para adicionar um ambiente. Use a lista de seleção para alterar o ambiente</h4>
+    </div>
+    <div name="contactControl" style="display: none">
+        <form name="formContact" class="border p-3 mb-2">
+            <input name="name" placeholder="Nome" class="form-control form-control-sm mb-2">
+            <input name="phone" placeholder="Telefone" class="form-control form-control-sm mb-2">
+            <button name="createContact" type="submit" class="btn btn-primary">Criar contato</button>
+        </form>
+        <h2>Lista de contatos</h2>
+        <ul name="contactList" class="list-group"></ul>
+    </div>
+</div>
